@@ -45,15 +45,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subheader" />
 
-    <EditText
-        android:id="@+id/orderTypeField"
-        android:layout_width="84dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="100dp"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/orderType" />
-
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
@@ -198,4 +189,14 @@
         android:text="@string/_0_0"
         app:layout_constraintStart_toEndOf="@+id/laborField"
         app:layout_constraintTop_toTopOf="@+id/total" />
+
+    <Spinner
+        android:id="@+id/orderTypeField"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/orderType" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
