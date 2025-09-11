@@ -35,6 +35,10 @@ public class RepairOrderActivity extends AppCompatActivity {
     OnClickListener buttonListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            if (inspectionET.getText().toString().isEmpty() || paintET.getText().toString().isEmpty() ||
+            partsET.getText().toString().isEmpty() || laborET.getText().toString().isEmpty()) {
+                return;
+            }
             Random gen = new Random();
 
             double inspectionValue = Double.parseDouble(inspectionET.getText().toString());
